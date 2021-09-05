@@ -1,0 +1,137 @@
+* {
+    // box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: $white;
+}
+
+.btn-default {
+    overflow: hidden;
+    padding: 12px 34px;
+    color: $white;
+    background-color: $gray-btn;
+    border-radius: 70px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: none;
+    position: relative;
+}
+
+.btn-default+.btn-default {
+    margin-left: 16px;
+}
+
+.btn-default:hover::before {
+    transform: translateX(0);
+    transform-origin: right;
+}
+
+.btn-default::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    width: 100%;
+    height: 48.5px;
+    border-radius: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+    transform-origin: left;
+    transition: all 0.3s;
+    min-width: 210px;
+}
+
+.btn-primary-color {
+    background-color: $primary-color;
+}
+
+.center-i-tag i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-title {
+    display: flex;
+    color: #666;
+    &-text {
+        margin-left: 8px;
+    }
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    &__text {
+        display: flex;
+        justify-content: center;
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    &__line {
+        display: block;
+        height: 5px;
+        width: 150px;
+        background-color: #666;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            transition: all 1s;
+            animation: grow-up-line 2s ease-in infinite;
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw !important;
+    background-color: $white;
+    padding: 0 75px;
+    z-index: 1;
+    transition: all .3s;
+    animation: fadeIn .5s ease-in;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    a {
+        color: gray !important;
+    }
+}
+
+.sticky+.header__body {
+    padding-top: 60px;
+}

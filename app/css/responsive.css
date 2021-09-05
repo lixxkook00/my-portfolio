@@ -1,0 +1,132 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  .hidden-t {
+    display: none;
+  }
+  .nav__list {
+    display: none !important;
+  }
+  .header__body {
+    flex-direction: column;
+    flex: unset;
+    margin-top: 50px;
+  }
+  .header__body-avt {
+    height: 260px;
+    width: 260px;
+  }
+  .header__body-infor {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .header__body .infor__decs {
+    line-height: 2;
+    font-weight: 400;
+  }
+  .sticky {
+    height: 50px;
+  }
+  .sticky .nav__icon-soft span {
+    background-color: gray !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .home,
+  .background {
+    overflow: unset !important;
+  }
+}
+
+/* Tablet Only */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hidden-m-t {
+    display: none !important;
+  }
+  .header__body-infor .infor-title__static {
+    text-align: left;
+  }
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+  .hidden-m {
+    display: none;
+  }
+  .header__body {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .header__body-avt {
+    height: 150px;
+    width: 150px;
+    border: 10px solid #47BAD4;
+  }
+  .header__body-infor {
+    width: 100%;
+  }
+  .header__body-infor .infor-title {
+    font-size: 3rem;
+    justify-content: center;
+  }
+  .header__body-infor .infor__decs {
+    line-height: 1.6;
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+  .header__body-infor .button__list {
+    flex-direction: column;
+  }
+  .header__body-infor .button__list button {
+    margin: 0;
+    margin-bottom: 12px;
+    min-width: 288px;
+  }
+  .header__body .infor-title__static {
+    text-align-last: center;
+    max-width: 240px;
+    margin: 0 0 0 2px;
+  }
+  .header .sroll {
+    display: none;
+  }
+  .about {
+    padding-top: 40px;
+  }
+  .about__section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-title__text {
+    font-size: 3.4rem;
+    font-weight: 700;
+  }
+  .main-title {
+    margin-bottom: 40px;
+  }
+  .header .nav {
+    padding: 0 20px;
+    height: 50px;
+  }
+}
+
+/* Tablet to PC low resolution */
+/* > PC low resolution */
+/* PC only */
+@media (min-width: 1024px) {
+  .hide-on-pc {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1280px;
+  }
+  .about__item-content {
+    max-width: 173px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

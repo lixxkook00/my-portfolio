@@ -1,0 +1,40 @@
+:root {
+    --primaryBlue: #47BAD4;
+    --primaryGreen: #7CD52D;
+    --primaryRed: #FC255A;
+    --primaryOrange: #FD732A;
+    --primaryPurple: #9729D3;
+    --primaryYellow: #FED239;
+    --primaryPink: #FD28FC;
+    --primaryMagenta: #FD5F5B;
+    --primaryColor: #47BAD4;
+}
+
+::selection,
+.theme__button,
+.btn-primary-color,
+.main-title__line::before,
+.btn-primary-color {
+    background-color: var(--primaryColor) !important;
+}
+
+.header__body-avt {
+    border-color: var(--primaryColor) !important;
+}
+
+.header .nav__item:hover a,
+.about__item-title,
+.color-title-text,
+.main-title__text--primary,
+.header__body-infor .social__list .social__item:hover i,
+.soft-menu__item--active a,
+.soft-menu__item:hover a,
+.header .nav__item--active a,
+.header__body-infor .infor-title__static,
+.nav__logo a {
+    color: var(--primaryColor) !important;
+}
+
+::selection {
+    color: #fff;
+}
