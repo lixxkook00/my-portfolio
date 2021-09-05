@@ -35,6 +35,9 @@
             }
         }
     }
+    .header__body-infor h2 {
+        padding-left: 0;
+    }
 }
 
 // Motherfucking Iphone 5S
@@ -42,6 +45,10 @@
     .home,
     .background {
         overflow: unset !important;
+    }
+    .header .header__body-avt {
+        height: 100px;
+        width: 100px;
     }
 }
 
@@ -120,12 +127,24 @@
         padding: 0 20px;
         height: 50px;
     }
+    .button__list {
+        a {
+            margin-left: unset;
+        }
+    }
 }
 
 
 /* Tablet to PC low resolution */
 
-@media (min-width: 740px) and (max-width: 1023px) {}
+@media (min-width: 985px) and (max-width: 1200px) {
+    .about__item-title {
+        min-width: 90px;
+    }
+    .about__item-content {
+        max-width: 115px;
+    }
+}
 
 
 /* > PC low resolution */
@@ -143,9 +162,9 @@
 
 // PC
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1280px;
-    }
+    // .container {
+    //     max-width: 1280px;
+    // }
     .about__item-content {
         max-width: 173px;
     }

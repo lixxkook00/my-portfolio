@@ -6,6 +6,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,10 @@ a:active,
 a:hover {
   text-decoration: none;
   color: #fff;
+}
+
+a + a {
+  margin-left: 16px;
 }
 
 .btn-default {
@@ -364,17 +369,20 @@ a:hover {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding-left: 35px;
+  margin-bottom: 20px;
 }
 
 .header__body-infor .infor-title {
-  display: flex;
   font-size: 5rem;
+  font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .header__body-infor .infor-title__static {
   font-weight: 600;
-  margin-left: 12px;
+  margin-left: 2px;
   letter-spacing: 2px;
   color: #47BAD4;
   font-family: 'Poppins', sans-serif !important;
@@ -417,8 +425,13 @@ a:hover {
   justify-content: center;
 }
 
+.header__body-infor .button__list a {
+  width: 100%;
+}
+
 .header__body-infor .button__list button {
   font-size: 1.5rem;
+  width: 100%;
 }
 
 .header__body-infor .button__list button i {
@@ -454,7 +467,7 @@ a:hover {
 
 .about {
   padding: 80px 0;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .about .heading {
@@ -482,7 +495,6 @@ a:hover {
 
 .about__item-title {
   opacity: .8;
-  min-width: 87px;
 }
 
 .about__item-title i {

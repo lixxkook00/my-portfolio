@@ -30,12 +30,19 @@
   .sticky .nav__icon-soft span {
     background-color: gray !important;
   }
+  .header__body-infor h2 {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 321px) {
   .home,
   .background {
     overflow: unset !important;
+  }
+  .header .header__body-avt {
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -110,9 +117,21 @@
     padding: 0 20px;
     height: 50px;
   }
+  .button__list a {
+    margin-left: unset;
+  }
 }
 
 /* Tablet to PC low resolution */
+@media (min-width: 985px) and (max-width: 1200px) {
+  .about__item-title {
+    min-width: 90px;
+  }
+  .about__item-content {
+    max-width: 115px;
+  }
+}
+
 /* > PC low resolution */
 /* PC only */
 @media (min-width: 1024px) {
@@ -122,9 +141,6 @@
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1280px;
-  }
   .about__item-content {
     max-width: 173px;
   }
