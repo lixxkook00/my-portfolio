@@ -73,7 +73,7 @@ btnTheme.onclick = () => {
     }
 }
 
-// Change Theme 
+// Change Theme
 
 setTheme = (color) => {
     let colorTheme;
@@ -96,17 +96,35 @@ setTheme = (color) => {
     }
     root.style.setProperty('--primaryColor', colorTheme);
 }
+checkTheme = (item, list) => {
+    // clear icon checked
+    for (let items of list) {
+        items.classList.remove('theme__icon--active');
+    }
+    item.classList.add('theme__icon--active');
+}
 
+// When Select form Theme color list
 for (let item of themeItems) {
     item.onclick = () => {
         setTheme(item.getAttribute('data-color'));
-        // clear icon checked
-        for (let items of themeItems) {
-            items.classList.remove('theme__icon--active');
-        }
-        item.classList.add('theme__icon--active');
+        console.log(item)
+        window.localStorage.setItem('themeColor', item.getAttribute('data-color'));
+        checkTheme(item, themeItems)
     }
 }
+
+// Get current theme color from localStorage
+const currentTheme = window.localStorage.getItem('themeColor');
+if (currentTheme != null) {
+    setTheme(currentTheme);
+    for (let item of themeItems) {
+        if (item.getAttribute('data-color') == currentTheme) {
+            checkTheme(item, themeItems)
+        }
+    }
+}
+
 // Sticky
 const navbar = document.querySelector(".nav");
 

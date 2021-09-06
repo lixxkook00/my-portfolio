@@ -545,6 +545,10 @@ a + a {
   overflow-wrap: break-word;
 }
 
+.about__item-content a {
+  color: #666;
+}
+
 .skill__item {
   position: relative;
   margin-bottom: 20px;
@@ -824,13 +828,15 @@ a + a {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.4);
-  display: none;
-  transition: all linear 0.3s;
+  transform: translateX(-100%);
+  transition: all linear 0.01s;
+  opacity: 0;
   z-index: 1;
 }
 
 .soft-menu.open {
-  display: block;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .soft-menu__list {
