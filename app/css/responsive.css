@@ -126,6 +126,9 @@
   .portfolio .btn-default {
     padding: 10px 14px;
   }
+  .contact .main-title {
+    margin-bottom: 10px;
+  }
 }
 
 /* Tablet to PC low resolution */

@@ -8,7 +8,7 @@ const themeItems = document.querySelectorAll('.theme__icon')
 const root = document.documentElement;
 const process = document.querySelectorAll('.skill__item-process span')
 const processItem = document.querySelectorAll('.skill__item')
-
+const btnLogo = document.querySelector('#navLogo')
 
 
 openSoftMenu = () => {
@@ -108,7 +108,7 @@ for (let item of themeItems) {
     }
 }
 // Sticky
-var navbar = document.querySelector(".nav");
+const navbar = document.querySelector(".nav");
 
 // Catch event when window onscroll
 window.onscroll = function() {
@@ -175,3 +175,8 @@ listSoftMenu.forEach(item => {
         }
     }
 })
+
+//Redirect
+btnLogo.onclick = () => {
+    window.location.href = './'
+}

@@ -31,6 +31,8 @@
 
 // Home -> Header
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -467,6 +469,24 @@
         }
         &:hover {
             box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+// FOOTER
+.footer {
+    height: 78px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        i {
+            margin-left: 4px;
         }
     }
 }

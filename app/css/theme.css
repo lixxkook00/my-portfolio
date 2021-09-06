@@ -26,6 +26,7 @@
     border-color: var(--primaryColor) !important;
 }
 
+.footer__content i,
 .contact__item-body-content a:hover,
 .contact__item-icon i,
 .header .nav__item:hover a,
