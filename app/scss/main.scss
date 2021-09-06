@@ -55,6 +55,9 @@
             font-size: 2.6rem;
             font-weight: 600;
             letter-spacing: 1px;
+            a:hover {
+                cursor: pointer;
+            }
         }
         &__list {
             display: flex;
@@ -493,8 +496,6 @@
         }
     }
 }
-
-.over-lay {}
 
 //Soft Menu
 .soft-menu {

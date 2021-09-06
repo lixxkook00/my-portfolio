@@ -317,6 +317,10 @@ a + a {
   letter-spacing: 1px;
 }
 
+.header .nav__logo a:hover {
+  cursor: pointer;
+}
+
 .header .nav__list {
   display: flex;
   align-items: center;

@@ -1,6 +1,7 @@
 const navIconMobile = document.querySelector('.nav__icon-soft')
 const softMenu = document.querySelector('.soft-menu')
 const softMenuList = document.querySelector('.soft-menu__list')
+const softMenuItems = document.querySelectorAll('.soft-menu__item')
 const btnClosSoftMenu = document.querySelector('.soft-menu__item:first-child i')
 const btnTheme = document.querySelector('.theme__button')
 const listTheme = document.querySelector('.theme')
@@ -9,6 +10,14 @@ const root = document.documentElement;
 const process = document.querySelectorAll('.skill__item-process span')
 const processItem = document.querySelectorAll('.skill__item')
 const btnLogo = document.querySelector('#navLogo')
+const processList = document.querySelectorAll('.process')
+const listSoftMenu = document.querySelectorAll('.soft-menu__item')
+const navItem = document.querySelectorAll('.nav__item')
+
+// Theme from localstorage
+const currentTheme = window.localStorage.getItem('themeColor');
+// Sticky
+const navbar = document.querySelector(".nav");
 
 
 openSoftMenu = () => {
@@ -49,11 +58,6 @@ navIconMobile.onclick = function() {
     }
 }
 
-// btnClosSoftMenu.onclick = () => {
-//     closeSoftMenu();
-//     unClickedNavIcon();
-// }
-
 softMenu.onclick = () => {
     closeSoftMenu();
     unClickedNavIcon();
@@ -74,7 +78,6 @@ btnTheme.onclick = () => {
 }
 
 // Change Theme
-
 setTheme = (color) => {
     let colorTheme;
     if (color == 'green') {
@@ -113,9 +116,17 @@ for (let item of themeItems) {
         checkTheme(item, themeItems)
     }
 }
+// soft menu click
+softMenuItems.forEach(item => {
+    item.onclick = () => {
+        softMenuItems.forEach(items => {
+            items.classList.remove('soft-menu__item--active')
+        })
+        item.classList.add('soft-menu__item--active')
+    }
+})
 
 // Get current theme color from localStorage
-const currentTheme = window.localStorage.getItem('themeColor');
 if (currentTheme != null) {
     setTheme(currentTheme);
     for (let item of themeItems) {
@@ -124,9 +135,27 @@ if (currentTheme != null) {
         }
     }
 }
+changeNavActive = (index) => {
+    // nav
+    navItem.forEach(item => {
+        item.classList.remove('nav__item--active')
+    })
+    navItem[index].classList.add('nav__item--active')
 
-// Sticky
-const navbar = document.querySelector(".nav");
+    // soft menu
+    softMenuItems.forEach(item => {
+        item.classList.remove('soft-menu__item--active')
+    })
+    softMenuItems[index + 1].classList.add('soft-menu__item--active')
+}
+
+navItemActiveOnScroll = (elementToScroll, index) => {
+    if (elementToScroll.getBoundingClientRect().top <= 60 &&
+        elementToScroll.getBoundingClientRect().top > 0) {
+        changeNavActive(index)
+    }
+}
+
 
 // Catch event when window onscroll
 window.onscroll = function() {
@@ -137,7 +166,20 @@ window.onscroll = function() {
         document.body.scrollTop
     )
 
-    // console.log(document.querySelector('.skill').getBoundingClientRect().top)
+    // Nav item active when scroll
+    if (document.querySelector('#home').getBoundingClientRect().top < 0 &&
+        document.querySelector('#home').getBoundingClientRect().top > -500) {
+        changeNavActive(0)
+    }
+
+    navItemActiveOnScroll(document.querySelector('#about'), 1)
+    navItemActiveOnScroll(document.querySelector('#portfolio'), 2)
+
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        changeNavActive(3)
+    }
+
+    // console.log(document.querySelector('#home').getBoundingClientRect().top)
     // Sticky Nav
     if (parseInt(scrollTop) >= 231) {
         navbar.classList.add("sticky")
@@ -159,7 +201,6 @@ window.onscroll = function() {
 };
 
 // Get/Set Process value for Portfolio
-const processList = document.querySelectorAll('.process')
 processList.forEach(item => {
     // console.log(item.childNodes[1].getAttribute('data-percent'))
     item.childNodes.forEach(item => {
@@ -174,14 +215,12 @@ processList.forEach(item => {
 
 
 // Scroll smooth
-
 scrollToElement = (button, id) => {
     button.onclick = () => {
         document.querySelector(`#${id}`).scrollIntoView({ behavior: 'smooth' });
     }
 }
 
-const listSoftMenu = document.querySelectorAll('.soft-menu__item')
 listSoftMenu.forEach(item => {
     item.childNodes[1].PreventDefault
     item.onclick = () => {
