@@ -51,6 +51,7 @@ a+a {
 
 .btn-default:hover::before {
     transform: translateX(0);
+    opacity: 1;
     transform-origin: right;
 }
 
@@ -65,7 +66,8 @@ a+a {
     height: 48.5px;
     border-radius: 70px;
     background-color: rgba(0, 0, 0, 0.3);
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+    opacity: 0;
     transform-origin: left;
     transition: all 0.3s;
     min-width: 210px;
@@ -139,4 +141,27 @@ a+a {
 
 .sticky+.header__body {
     padding-top: 60px;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    &__text {
+        font-size: 2.4rem;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+
+.process {
+    display: block;
+    height: 10px;
+    width: 100%;
+    margin: 12px 0;
+    position: relative;
+    background-color: #dddddd;
+    border-radius: 4px;
+    overflow: hidden;
 }

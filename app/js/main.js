@@ -6,6 +6,10 @@ const btnTheme = document.querySelector('.theme__button')
 const listTheme = document.querySelector('.theme')
 const themeItems = document.querySelectorAll('.theme__icon')
 const root = document.documentElement;
+const process = document.querySelectorAll('.skill__item-process span')
+const processItem = document.querySelectorAll('.skill__item')
+
+
 
 openSoftMenu = () => {
     softMenu.classList.add('open');
@@ -45,10 +49,10 @@ navIconMobile.onclick = function() {
     }
 }
 
-btnClosSoftMenu.onclick = () => {
-    closeSoftMenu();
-    unClickedNavIcon();
-}
+// btnClosSoftMenu.onclick = () => {
+//     closeSoftMenu();
+//     unClickedNavIcon();
+// }
 
 softMenu.onclick = () => {
     closeSoftMenu();
@@ -106,6 +110,7 @@ for (let item of themeItems) {
 // Sticky
 var navbar = document.querySelector(".nav");
 
+// Catch event when window onscroll
 window.onscroll = function() {
     // Fixed Safari ScrollTop
     const scrollTop = Math.max(
@@ -114,9 +119,59 @@ window.onscroll = function() {
         document.body.scrollTop
     )
 
+    // console.log(document.querySelector('.skill').getBoundingClientRect().top)
+    // Sticky Nav
     if (parseInt(scrollTop) >= 231) {
         navbar.classList.add("sticky")
     } else {
         navbar.classList.remove("sticky");
     }
+    // Skill animation
+    if (document.querySelector('.skill').getBoundingClientRect().top <= 569) {
+        process.forEach(item => {
+            // Get/Set Value for process bar Skill
+            processItem.forEach(item => {
+                let percentValue = parseInt(item.childNodes[3].innerText.slice(0, -1))
+                item.childNodes[5].childNodes[1].style.width = `${percentValue}%`
+            })
+
+            item.classList.add('animation-process')
+        })
+    }
 };
+
+// Get/Set Process value for Portfolio
+const processList = document.querySelectorAll('.process')
+processList.forEach(item => {
+    // console.log(item.childNodes[1].getAttribute('data-percent'))
+    item.childNodes.forEach(item => {
+        if (item.nodeName === 'SPAN') {
+            let percent = parseInt(item.getAttribute('data-percent'));
+            let color = item.getAttribute('data-color')
+            item.style.width = `${percent}%`
+            item.style.backgroundColor = color;
+        }
+    })
+})
+
+
+// Scroll smooth
+
+scrollToElement = (button, id) => {
+    button.onclick = () => {
+        document.querySelector(`#${id}`).scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+const listSoftMenu = document.querySelectorAll('.soft-menu__item')
+listSoftMenu.forEach(item => {
+    item.childNodes[1].PreventDefault
+    item.onclick = () => {
+        let dataAddress = item.childNodes[1].getAttribute('data-address')
+        if (dataAddress !== '') {
+            document.querySelector(`#${dataAddress}`).scrollIntoView({ behavior: 'smooth' });
+            closeSoftMenu();
+            unClickedNavIcon();
+        }
+    }
+})

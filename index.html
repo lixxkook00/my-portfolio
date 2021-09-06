@@ -23,7 +23,7 @@
 <body>
     <div class="app">
         <!-- HOME -->
-        <div class="home">
+        <div class="home" id="home">
             <!-- Background Image -->
             <div class="background"></div>
             <!-- Container -->
@@ -43,17 +43,17 @@
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="#">
+                                <a href="#about">
                                     <i class="fas fa-user-alt"></i> ABOUT
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="#">
+                                <a href="#portfolio">
                                     <i class="fas fa-briefcase"></i> PORTFOLIO
                                 </a>
                             </li>
                             <li class="nav__item">
-                                <a href="#">
+                                <a href="#contact">
                                     <i class="fas fa-address-book"></i> CONTACT
                                 </a>
                             </li>
@@ -120,6 +120,7 @@
         <div class="about" id="about">
             <div class="container">
                 <div class="row">
+                    <!-- Infor -->
                     <div class="main-title col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="main-title__text color-title">
                             ABOUT
@@ -169,7 +170,7 @@
                                         <i class="fas fa-address-card"></i> Address :
                                     </div>
                                     <div class="about__item-content">
-                                        District 7, Ho Chi Minh
+                                        Binh Thanh, HCM
                                     </div>
                                 </div>
                                 <div class="about__item">
@@ -225,6 +226,207 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Skill -->
+                    <div class="section-title col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="section-title__text">SKILLS</div>
+                    </div>
+                    <!-- Skill Section -->
+                    <div class="skill col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="skill__item">
+                            <div class="skill__item-name">HTML</div>
+                            <div class="percent-count">95%</div>
+                            <div class="skill__item-process">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__item-name">CSS</div>
+                            <div class="percent-count">92%</div>
+                            <div class="skill__item-process">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__item-name">Java Script</div>
+                            <div class="percent-count">85%</div>
+                            <div class="skill__item-process">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__item-name">Responsive Web Design</div>
+                            <div class="percent-count">90%</div>
+                            <div class="skill__item-process">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill Section -->
+                    <div class="skill col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="skill__item">
+                            <div class="skill__item-name">React JS</div>
+                            <div class="percent-count">80%</div>
+                            <div class="skill__item-process">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__item-name">Bootstrap</div>
+                            <div class="percent-count">82%</div>
+                            <div class="skill__item-process">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill__item">
+                            <div class="skill__item-name">Node Js</div>
+                            <div class="percent-count">50%</div>
+                            <div class="skill__item-process">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PORTFOLIO -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="main-title col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="main-title__text color-title">
+                            MY
+                            <div class="main-title__text--primary color-title-text">
+                                PORTFOLIO
+                            </div>
+                        </div>
+                        <span class="main-title__line">
+                    </span>
+                    </div>
+                    <div class="portfolio__filter col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div onclick="" class="portfolio__filter-item portfolio__filter-item--active btn-default">
+                            ALL WORK
+                        </div>
+                        <div onclick="" class="portfolio__filter-item btn-default">
+                            PROJECT
+                        </div>
+                        <div onclick="" class="portfolio__filter-item btn-default">
+                            CLONE UI
+                        </div>
+                    </div>
+                    <div class=" col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio__item">
+                            <div class="portfolio__item-name">
+                                Fresh Mart
+                            </div>
+                            <div class="portfolio__item-img" onclick="">
+                                <img src="./app/img/fresh-mart.png" alt="">
+                                <div class="portfolio__item-popup">
+                                    <a href="https://lixxkook00.github.io/fresh-mart/">
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </a>
+                                    <a href="https://github.com/lixxkook00/fresh-mart">
+                                        <span><i class="fas fa-code"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="portfolio__item-language">
+                                <span class="process">
+                                    <span data-percent="62" data-color="#FD732A" class="process__item process__item--one">HTML</span>
+                                <span data-percent="22" data-color="#F0AA53" class="process__item process__item--two">CSS</span>
+                                <span data-percent="16" data-color="#486E34" class="process__item process__item--three">JS</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACT -->
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="main-title col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="main-title__text color-title">
+                            CONTACT
+                            <div class="main-title__text--primary color-title-text">
+                                ME
+                            </div>
+                        </div>
+                        <span class="main-title__line">
+                    </span>
+                    </div>
+                    <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <i class="fas fa-map-marker"></i>
+                            </div>
+                            <div class="contact__item-body">
+                                <div class="contact__item-body-name">
+                                    MY ADDRESS
+                                </div>
+                                <div class="contact__item-body-content">
+                                    140 Dinh Bo Linh, Ward 26, Binh Thanh, Ho Chi Minh City
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="contact__item-body">
+                                <div class="contact__item-body-name">
+                                    SOCIAL PROFILES
+                                </div>
+                                <div class="contact__item-body-content--list">
+                                    <a href="#" class="social__item">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social__item">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social__item">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="social__item">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact__item-body">
+                                <div class="contact__item-body-name">
+                                    EMAIL ME
+                                </div>
+                                <div class="contact__item-body-content">
+                                    <a href="mailto:linhlinhkook99@gmail.com">linhlinhkook99@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="contact__item">
+                            <div class="contact__item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact__item-body">
+                                <div class="contact__item-body-name">
+                                    CALL ME
+                                </div>
+                                <div class="contact__item-body-content">
+                                    <a href="tel:+84356462535">+84 35 64 62 535</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,27 +434,27 @@
         <div class="soft-menu">
             <ul class="soft-menu__list">
                 <li class="soft-menu__item">
-                    <a href="#">
-                        <i class="fas fa-times"></i>
+                    <a data-address="">
+                        <!-- <i class="fas fa-times"></i> -->
                     </a>
                 </li>
                 <li class="soft-menu__item soft-menu__item--active">
-                    <a href="#">
+                    <a data-address="home">
                         <i class="fas fa-home"></i> HOME
                     </a>
                 </li>
                 <li class="soft-menu__item">
-                    <a href="#">
+                    <a data-address="about">
                         <i class="fas fa-user-alt"></i> ABOUT
                     </a>
                 </li>
                 <li class="soft-menu__item">
-                    <a href="#">
+                    <a data-address="portfolio">
                         <i class="fas fa-briefcase"></i> PORTFOLIO
                     </a>
                 </li>
                 <li class="soft-menu__item">
-                    <a href="#">
+                    <a data-address="contact">
                         <i class="fas fa-address-book"></i> CONTACT
                     </a>
                 </li>

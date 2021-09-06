@@ -10,11 +10,15 @@
     --primaryColor: #47BAD4;
 }
 
+.portfolio__item-popup a,
+.portfolio__filter-item:hover,
+.skill__item-process span,
 ::selection,
 .theme__button,
 .btn-primary-color,
 .main-title__line::before,
-.btn-primary-color {
+.btn-primary-color,
+.portfolio__filter-item--active {
     background-color: var(--primaryColor) !important;
 }
 
@@ -22,6 +26,8 @@
     border-color: var(--primaryColor) !important;
 }
 
+.contact__item-body-content a:hover,
+.contact__item-icon i,
 .header .nav__item:hover a,
 .about__item-title,
 .color-title-text,
