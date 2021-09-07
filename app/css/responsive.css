@@ -54,6 +54,9 @@
   .header__body-infor .infor-title__static {
     text-align: left;
   }
+  .contact__item {
+    min-height: 121px;
+  }
 }
 
 /* Mobile Only */

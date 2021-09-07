@@ -638,6 +638,7 @@ a + a {
   color: #666;
   text-align: center;
   margin: 8px 0;
+  padding-bottom: 4px;
   border-bottom: 1px solid #d0cfcf;
 }
 
@@ -744,6 +745,7 @@ a + a {
   border-radius: 6px;
   margin-top: 30px;
   padding: 20px;
+  min-height: 99px;
 }
 
 .contact__item-icon {
