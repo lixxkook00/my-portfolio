@@ -906,51 +906,6 @@ a + a {
   color: #47BAD4;
 }
 
-.soft-menu .dark-mode {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  width: 64px;
-  height: 34px;
-  background-color: #666;
-  border-radius: 26px;
-}
-
-.soft-menu .dark-mode__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-
-.soft-menu .dark-mode__icon i {
-  font-size: 2.2rem;
-  padding-right: 0;
-}
-
-.soft-menu .dark-mode__btn {
-  position: absolute;
-  top: 50%;
-  left: 1px;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: #fff;
-  transform: translate(0, -50%);
-  transition: all 0.3s;
-}
-
-.soft-menu .dark-mode__btn.up {
-  transform: translate(32px, -50%);
-}
-
-.soft-menu .dark-mode__btn.down {
-  transform: translate(0, -50%);
-}
-
 .theme {
   display: flex;
   flex-direction: column;
@@ -958,7 +913,6 @@ a + a {
   top: 200px;
   left: 0;
   width: 202px;
-  height: 182px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   border-top-right-radius: 6px;
@@ -1071,5 +1025,64 @@ a + a {
 .theme.open {
   transform: translateX(0);
   transition: all 0.2s;
+}
+
+.theme__darkmode {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-bottom: 8px;
+  border-top: 1px solid #DDD;
+}
+
+.theme__darkmode .dark-mode {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 64px;
+  height: 34px;
+  background-color: #666;
+  border-radius: 26px;
+}
+
+.theme__darkmode .dark-mode__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.theme__darkmode .dark-mode__icon i {
+  font-size: 2.2rem;
+  padding-right: 0;
+}
+
+.theme__darkmode .dark-mode__btn {
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+}
+
+.theme__darkmode .dark-mode__btn.up {
+  transform: translate(32px, -50%);
+}
+
+.theme__darkmode .dark-mode__btn.down {
+  transform: translate(0, -50%);
+}
+
+.theme__darkmode .dark-mode__close i {
+  color: #FED239;
+}
+
+.theme__darkmode .dark-mode__open i {
+  color: #9729D3;
 }
 /*# sourceMappingURL=main.css.map */

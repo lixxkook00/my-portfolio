@@ -568,45 +568,6 @@
     &__item--active a {
         color: $primary-color;
     }
-    .dark-mode {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-        width: 64px;
-        height: 34px;
-        background-color: #666;
-        border-radius: 26px;
-        &__icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-            i {
-                font-size: 2.2rem;
-                padding-right: 0;
-            }
-        }
-        &__btn {
-            position: absolute;
-            top: 50%;
-            left: 1px;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            background-color: #fff;
-            transform: translate(0, -50%);
-            transition: all 0.3s;
-            &.up {
-                transform: translate(32px, -50%);
-            }
-            &.down {
-                transform: translate(0, -50%);
-            }
-        }
-    }
 }
 
 .theme {
@@ -616,7 +577,7 @@
     top: 200px;
     left: 0;
     width: 202px;
-    height: 182px;
+    // height: 182px;
     background-color: $white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     border-top-right-radius: 6px;
@@ -710,5 +671,55 @@
     &.open {
         transform: translateX(0);
         transition: all 0.2s;
+    }
+    &__darkmode {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        padding-top: 10px;
+        margin-bottom: 8px;
+        border-top: 1px solid #DDD;
+        .dark-mode {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 64px;
+            height: 34px;
+            background-color: #666;
+            border-radius: 26px;
+            &__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                i {
+                    font-size: 2.2rem;
+                    padding-right: 0;
+                }
+            }
+            &__btn {
+                position: absolute;
+                top: 50%;
+                left: 1px;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background-color: #fff;
+                transform: translate(0, -50%);
+                transition: all 0.3s;
+                &.up {
+                    transform: translate(32px, -50%);
+                }
+                &.down {
+                    transform: translate(0, -50%);
+                }
+            }
+            &__close i {
+                color: #FED239;
+            }
+            &__open i {
+                color: #9729D3;
+            }
+        }
     }
 }
