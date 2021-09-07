@@ -13,10 +13,13 @@ const btnLogo = document.querySelector('#navLogo')
 const processList = document.querySelectorAll('.process')
 const listSoftMenu = document.querySelectorAll('.soft-menu__item')
 const navItem = document.querySelectorAll('.nav__item')
-
-// Theme from localstorage
+const btnDarkMode = document.querySelector('.dark-mode__btn')
+const btnDarkModeOpen = document.querySelector('.dark-mode__open')
+const btnDarkModeClose = document.querySelector('.dark-mode__close')
+    // Theme from localstorage
 const currentTheme = window.localStorage.getItem('themeColor');
-// Sticky
+const currentDarkMode = window.localStorage.getItem('darkMode')
+    // Sticky
 const navbar = document.querySelector(".nav");
 
 
@@ -111,7 +114,6 @@ checkTheme = (item, list) => {
 for (let item of themeItems) {
     item.onclick = () => {
         setTheme(item.getAttribute('data-color'));
-        console.log(item)
         window.localStorage.setItem('themeColor', item.getAttribute('data-color'));
         checkTheme(item, themeItems)
     }
@@ -236,4 +238,35 @@ listSoftMenu.forEach(item => {
 //Redirect
 btnLogo.onclick = () => {
     window.location.href = './'
+}
+
+// Dark Mode
+let stateDarkMode = false;
+openDarkMode = () => {
+    btnDarkMode.classList.remove('down')
+    btnDarkMode.classList.add('up')
+    stateDarkMode = true;
+    root.style.setProperty('--darkModeBackground', '#000');
+    root.style.setProperty('--darkModeColor', '#fff');
+}
+closeDarkMode = () => {
+    btnDarkMode.classList.remove('up')
+    btnDarkMode.classList.add('down')
+    stateDarkMode = false;
+    root.style.setProperty('--darkModeBackground', '#fff');
+    root.style.setProperty('--darkModeColor', '#000');
+}
+
+btnDarkModeOpen.onclick = () => {
+    openDarkMode()
+    window.localStorage.setItem('darkMode', true);
+    console.log(currentDarkMode)
+}
+btnDarkModeClose.onclick = () => {
+    closeDarkMode()
+    window.localStorage.setItem('darkMode', false);
+    console.log(currentDarkMode)
+}
+if (currentDarkMode === "true") {
+    openDarkMode()
 }

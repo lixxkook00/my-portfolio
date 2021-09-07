@@ -870,6 +870,7 @@ a + a {
 }
 
 .soft-menu__item a {
+  position: relative;
   color: #666666;
   font-size: 1.5rem;
   font-weight: 500;
@@ -885,6 +886,11 @@ a + a {
   transition: all 0.3s;
 }
 
+.soft-menu__item.dark-modes:hover a {
+  transform: translateX(0);
+  color: unset;
+}
+
 .soft-menu__item:first-child {
   border-top: none;
   justify-content: flex-end;
@@ -898,6 +904,51 @@ a + a {
 
 .soft-menu__item--active a {
   color: #47BAD4;
+}
+
+.soft-menu .dark-mode {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 34px;
+  background-color: #666;
+  border-radius: 26px;
+}
+
+.soft-menu .dark-mode__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.soft-menu .dark-mode__icon i {
+  font-size: 2.2rem;
+  padding-right: 0;
+}
+
+.soft-menu .dark-mode__btn {
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
+}
+
+.soft-menu .dark-mode__btn.up {
+  transform: translate(32px, -50%);
+}
+
+.soft-menu .dark-mode__btn.down {
+  transform: translate(0, -50%);
 }
 
 .theme {

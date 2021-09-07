@@ -538,6 +538,7 @@
         padding-left: 18px;
         border-top: 1px solid #DDDDDD;
         a {
+            position: relative;
             color: #666666;
             font-size: 1.5rem;
             font-weight: 500;
@@ -549,6 +550,10 @@
             color: $primary-color;
             transform: translateX(10px);
             transition: all 0.3s;
+        }
+        &.dark-modes:hover a {
+            transform: translateX(0);
+            color: unset;
         }
     }
     &__item:first-child {
@@ -562,6 +567,45 @@
     }
     &__item--active a {
         color: $primary-color;
+    }
+    .dark-mode {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        width: 64px;
+        height: 34px;
+        background-color: #666;
+        border-radius: 26px;
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            i {
+                font-size: 2.2rem;
+                padding-right: 0;
+            }
+        }
+        &__btn {
+            position: absolute;
+            top: 50%;
+            left: 1px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            transform: translate(0, -50%);
+            transition: all 0.3s;
+            &.up {
+                transform: translate(32px, -50%);
+            }
+            &.down {
+                transform: translate(0, -50%);
+            }
+        }
     }
 }
 

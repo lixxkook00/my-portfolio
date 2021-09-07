@@ -8,7 +8,30 @@
     --primaryPink: #FD28FC;
     --primaryMagenta: #FD5F5B;
     --primaryColor: #47BAD4;
+    --darkModeBackground: #fff;
+    --darkModeColor: #000;
 }
+
+
+/* Dark  Mode */
+
+.footer,
+.sticky,
+body,
+html {
+    background-color: var(--darkModeBackground) !important;
+}
+
+.portfolio__item-name,
+.contact__item-body-content a,
+.contact__item-body-content--list i,
+.contact__item-body-name,
+.footer {
+    color: var(--darkModeColor) !important;
+}
+
+
+/* Theme */
 
 .portfolio__item-popup a,
 .portfolio__filter-item:hover,
