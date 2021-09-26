@@ -418,8 +418,21 @@
             }
         }
     }
+    
 }
-
+.loading{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    &-img{
+        $size:70px;
+        width: $size;
+        height: $size;
+    }
+    img{
+        width: 100%;
+    }
+}
 // CONTACT
 .contact {
     margin-bottom: 30px;

@@ -10,45 +10,105 @@ const root = document.documentElement;
 const process = document.querySelectorAll('.skill__item-process span')
 const processItem = document.querySelectorAll('.skill__item')
 const btnLogo = document.querySelector('#navLogo')
-const processList = document.querySelectorAll('.process')
 const listSoftMenu = document.querySelectorAll('.soft-menu__item')
 const navItem = document.querySelectorAll('.nav__item')
 const btnDarkMode = document.querySelector('.dark-mode__btn')
 const btnDarkModeOpen = document.querySelector('.dark-mode__open')
 const btnDarkModeClose = document.querySelector('.dark-mode__close')
+const portfolioList = document.querySelector('.portfolio .container .row');
+
     // Theme from localstorage
 const currentTheme = window.localStorage.getItem('themeColor');
 const currentDarkMode = window.localStorage.getItem('darkMode')
     // Sticky
 const navbar = document.querySelector(".nav");
 
+    // Portfolio Control
+const btnPortfolioControls = document.querySelectorAll('.portfolio__filter-item')
 
-openSoftMenu = () => {
+
+import portfolios, {renderPortfolios} from './data.js'
+// Get/Set Process value for Portfolio
+const renderProcess = () => {
+    const processList = document.querySelectorAll('.process')
+
+    processList.forEach(item => {
+        // console.log(item.childNodes[1].getAttribute('data-percent'))
+        item.childNodes.forEach(item => {
+            if (item.nodeName === 'SPAN') {
+                let percent = parseInt(item.getAttribute('data-percent'));
+                let color = item.getAttribute('data-color')
+                item.style.width = `${percent}%`
+                item.style.backgroundColor = color;
+            }
+        })
+    })
+}
+
+const renderP = (object) => {
+    portfolioList.innerHTML = `
+            <div class="loading col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="loading-img">
+                    <img src="./app/img/loading.gif" alt="">
+                </div>
+            </div>
+        `
+    setTimeout(() => {
+        renderPortfolios(object,portfolioList);
+        renderProcess();
+    },800)
+}
+
+// Render Portfolio first time
+renderP(portfolios)
+
+// Render Portfolio controls
+btnPortfolioControls.forEach(item => {
+    item.onclick = () => {
+        // Active UI
+        btnPortfolioControls.forEach(item => {
+            item.classList.remove('portfolio__filter-item--active')
+        })
+        item.classList.add('portfolio__filter-item--active')
+
+        // Rerender
+        if(item.dataset.filter == 'all'){
+            renderP(portfolios)
+        }else {
+            const newObject = portfolios.filter((project) => project.type==item.dataset.filter)
+            console.log(newObject)
+            renderP(newObject)
+        }
+    }
+})
+
+// Utils
+const openSoftMenu = () => {
     softMenu.classList.add('open');
     setTimeout(function() {
         softMenuList.classList.add('open');
     }, 2);
 
 }
-closeSoftMenu = () => {
+const closeSoftMenu = () => {
     softMenu.classList.remove('open');
     setTimeout(function() {
         softMenuList.classList.remove('open');
     }, 2);
 }
-clickedNavIcon = () => {
+const clickedNavIcon = () => {
     navIconMobile.classList.add('icon-translate')
     stateNavIcon = true;
     openSoftMenu();
 }
-unClickedNavIcon = () => {
+const unClickedNavIcon = () => {
     navIconMobile.classList.remove('icon-translate')
     stateNavIcon = false;
 }
-openElements = (element) => {
+const openElements = (element) => {
     element.classList.add('open');
 }
-closeElements = (element) => {
+const closeElements = (element) => {
     element.classList.remove('open');
 }
 
@@ -81,7 +141,7 @@ btnTheme.onclick = () => {
 }
 
 // Change Theme
-setTheme = (color) => {
+const setTheme = (color) => {
     let colorTheme;
     if (color == 'green') {
         colorTheme = '#7CD52D'
@@ -102,7 +162,7 @@ setTheme = (color) => {
     }
     root.style.setProperty('--primaryColor', colorTheme);
 }
-checkTheme = (item, list) => {
+const checkTheme = (item, list) => {
     // clear icon checked
     for (let items of list) {
         items.classList.remove('theme__icon--active');
@@ -137,7 +197,7 @@ if (currentTheme != null) {
         }
     }
 }
-changeNavActive = (index) => {
+const changeNavActive = (index) => {
     // nav
     navItem.forEach(item => {
         item.classList.remove('nav__item--active')
@@ -151,7 +211,7 @@ changeNavActive = (index) => {
     softMenuItems[index + 1].classList.add('soft-menu__item--active')
 }
 
-navItemActiveOnScroll = (elementToScroll, index) => {
+const navItemActiveOnScroll = (elementToScroll, index) => {
     if (elementToScroll.getBoundingClientRect().top <= 60 &&
         elementToScroll.getBoundingClientRect().top > 0) {
         changeNavActive(index)
@@ -202,22 +262,10 @@ window.onscroll = function() {
     }
 };
 
-// Get/Set Process value for Portfolio
-processList.forEach(item => {
-    // console.log(item.childNodes[1].getAttribute('data-percent'))
-    item.childNodes.forEach(item => {
-        if (item.nodeName === 'SPAN') {
-            let percent = parseInt(item.getAttribute('data-percent'));
-            let color = item.getAttribute('data-color')
-            item.style.width = `${percent}%`
-            item.style.backgroundColor = color;
-        }
-    })
-})
 
 
 // Scroll smooth
-scrollToElement = (button, id) => {
+const scrollToElement = (button, id) => {
     button.onclick = () => {
         document.querySelector(`#${id}`).scrollIntoView({ behavior: 'smooth' });
     }
@@ -242,14 +290,14 @@ btnLogo.onclick = () => {
 
 // Dark Mode
 let stateDarkMode = false;
-openDarkMode = () => {
+const openDarkMode = () => {
     btnDarkMode.classList.remove('down')
     btnDarkMode.classList.add('up')
     stateDarkMode = true;
     root.style.setProperty('--darkModeBackground', '#000');
     root.style.setProperty('--darkModeColor', '#fff');
 }
-closeDarkMode = () => {
+const closeDarkMode = () => {
     btnDarkMode.classList.remove('up')
     btnDarkMode.classList.add('down')
     stateDarkMode = false;
