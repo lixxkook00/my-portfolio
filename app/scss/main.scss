@@ -328,6 +328,8 @@
         flex-direction: column;
         border: 1px solid rgb(189, 189, 189);
         border-radius: 20px;
+        transition: all 0.3s;
+        animation: grow-up .3s;
         &-name {
             font-size: 1.8rem;
             font-weight: 500;
@@ -418,21 +420,22 @@
             }
         }
     }
+    .loading{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        &-img{
+            $size:70px;
+            width: $size;
+            height: $size;
+        }
+        img{
+            width: 100%;
+        }
+    }
     
 }
-.loading{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    &-img{
-        $size:70px;
-        width: $size;
-        height: $size;
-    }
-    img{
-        width: 100%;
-    }
-}
+
 // CONTACT
 .contact {
     margin-bottom: 30px;

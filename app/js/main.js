@@ -46,6 +46,7 @@ const renderProcess = () => {
 }
 
 const renderP = (object) => {
+    // Animation before loading
     portfolioList.innerHTML = `
             <div class="loading col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="loading-img">

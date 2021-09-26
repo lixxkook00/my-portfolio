@@ -7,8 +7,13 @@
     display: none !important;
   }
   .header__body {
-    flex-direction: column;
-    flex: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
     margin-top: 50px;
   }
   .header__body-avt {
@@ -78,7 +83,9 @@
   }
   .header__body-infor .infor-title {
     font-size: 3rem;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header__body-infor .infor__decs {
     line-height: 1.6;
@@ -86,7 +93,10 @@
     font-size: 1.4rem;
   }
   .header__body-infor .button__list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .header__body-infor .button__list button {
     margin: 0;
@@ -106,9 +116,16 @@
     font-size: 1.8rem;
   }
   .about__section-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-title__text {
     font-size: 3.4rem;
