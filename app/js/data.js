@@ -24,6 +24,30 @@ const portfolios = [
         ]
     },
     { 
+        name: 'Music Player',
+        img:'./app/img/musicplayer.png',
+        linkViewPage: 'https://lixxkook00.github.io/music-player/',
+        linkSourceCode: 'https://github.com/lixxkook00/music-player',
+        type: 'project',
+        material: [
+            {
+                language: 'HTML',
+                color:'#FD732A',
+                percent: '27',
+            },
+            {
+                language: 'SCSS',
+                color: '#c4568c',
+                percent: '36',
+            },
+            {
+                language: 'JS',
+                color: '#486E34',
+                percent: '37',
+            }
+        ]
+    },
+    { 
         name: 'Shopee',
         img:'./app/img/shopee.png',
         linkViewPage: 'https://lixxkook00.github.io/shopee/',
@@ -119,6 +143,7 @@ const portfolios = [
             }
         ]
     },
+    
 ]
 const renderPortfolios = (portfolios,element,callback) => {
     const portfolioContent = portfolios.map((item) => {
