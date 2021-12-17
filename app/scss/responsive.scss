@@ -52,7 +52,6 @@
     }
 }
 
-
 /* Tablet Only */
 
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -67,7 +66,6 @@
     }
 }
 
-
 /* Mobile Only */
 
 @media (max-width: 739px) {
@@ -80,7 +78,7 @@
         &-avt {
             height: 150px;
             width: 150px;
-            border: 10px solid #47BAD4;
+            border: 10px solid #47bad4;
         }
         &-infor {
             width: 100%;
@@ -151,7 +149,6 @@
     }
 }
 
-
 /* Tablet to PC low resolution */
 
 @media (min-width: 985px) and (max-width: 1200px) {
@@ -163,11 +160,10 @@
     }
 }
 
-
 /* > PC low resolution */
 
-@media (min-width: 1024px) and (max-width: 1239px) {}
-
+@media (min-width: 1024px) and (max-width: 1239px) {
+}
 
 /* PC only */
 

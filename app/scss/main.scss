@@ -14,7 +14,7 @@
 }
 
 .background {
-    background-image: url('../img/header-background.jpg');
+    background-image: url("../img/header-background.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -62,7 +62,7 @@
         &__list {
             display: flex;
             align-items: center;
-            font-size: 1.6rem
+            font-size: 1.6rem;
         }
         &__item {
             padding: 20px 20px 20px 10px;
@@ -75,7 +75,7 @@
         }
         &__item:hover a {
             color: $primary-color;
-            transition: color linear .3s;
+            transition: color linear 0.3s;
         }
         &__icon-soft {
             display: flex;
@@ -89,7 +89,7 @@
                 background-color: $white;
                 transition: all 0.3s;
             }
-            span+span {
+            span + span {
                 margin-top: 8px;
             }
             &:hover {
@@ -100,13 +100,13 @@
             transition: all 0.3s;
             overflow: hidden;
             span:first-child {
-                transform: rotate( 45deg) translate(7px, 6px);
+                transform: rotate(45deg) translate(7px, 6px);
             }
             span:nth-child(2) {
                 transform: translateX(-100%);
             }
             span:nth-child(3) {
-                transform: rotate( -45deg) translate(10px, -9px);
+                transform: rotate(-45deg) translate(10px, -9px);
             }
         }
     }
@@ -147,7 +147,7 @@
                 margin-left: 2px;
                 letter-spacing: 2px;
                 color: $primary-color;
-                font-family: 'Poppins', sans-serif !important;
+                font-family: "Poppins", sans-serif !important;
             }
         }
         .infor__decs {
@@ -169,7 +169,7 @@
                 &:hover i {
                     color: $primary-color;
                     transform: translateY(-6px);
-                    transition: all linear .3s;
+                    transition: all linear 0.3s;
                 }
             }
             i {
@@ -204,7 +204,7 @@
         width: 30px;
         border-radius: 50px;
         border: 1px solid $white;
-        animation: up-and-down .8s ease-in forwards infinite alternate;
+        animation: up-and-down 0.8s ease-in forwards infinite alternate;
         &__dots {
             position: absolute;
             top: 10px;
@@ -242,7 +242,7 @@
         margin-bottom: 6px;
         font-weight: 400;
         &-title {
-            opacity: .8;
+            opacity: 0.8;
             i {
                 width: 20px;
             }
@@ -329,7 +329,7 @@
         border: 1px solid rgb(189, 189, 189);
         border-radius: 20px;
         transition: all 0.3s;
-        animation: grow-up .3s;
+        animation: grow-up 0.3s;
         &-name {
             font-size: 1.8rem;
             font-weight: 500;
@@ -371,13 +371,13 @@
                     text-align: center;
                     // Default Color
                     &--one {
-                        background-color: #FD5F5B;
+                        background-color: #fd5f5b;
                     }
                     &--two {
-                        background-color: #47BAD4;
+                        background-color: #47bad4;
                     }
                     &--three {
-                        background-color: #FD28FC;
+                        background-color: #fd28fc;
                     }
                 }
             }
@@ -402,7 +402,7 @@
                 height: 45px;
                 width: 45px;
                 border-radius: 50%;
-                transition: all .4s;
+                transition: all 0.4s;
                 transform: translateY(150px);
                 i {
                     font-size: 2rem;
@@ -415,25 +415,24 @@
                     color: #666666;
                 }
                 &:nth-child(2) {
-                    transition-delay: .1s;
+                    transition-delay: 0.1s;
                 }
             }
         }
     }
-    .loading{
+    .loading {
         display: flex;
         justify-content: center;
         margin-top: 30px;
-        &-img{
-            $size:70px;
+        &-img {
+            $size: 70px;
             width: $size;
             height: $size;
         }
-        img{
+        img {
             width: 100%;
         }
     }
-    
 }
 
 // CONTACT
@@ -453,7 +452,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #ECECEC;
+            background-color: #ececec;
             margin-top: 10px;
             i {
                 font-size: 1.8rem;
@@ -500,7 +499,7 @@
 // FOOTER
 .footer {
     height: 78px;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -544,7 +543,7 @@
         transition: all linear 0.3s;
     }
     &__list.open {
-        transform: translateX(0)
+        transform: translateX(0);
     }
     &__item {
         letter-spacing: 1px;
@@ -552,7 +551,7 @@
         display: flex;
         align-items: center;
         padding-left: 18px;
-        border-top: 1px solid #DDDDDD;
+        border-top: 1px solid #dddddd;
         a {
             position: relative;
             color: #666666;
@@ -603,10 +602,10 @@
     &__header {
         font-size: 1.5rem;
         font-weight: 500;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         padding: 15px 0;
         text-align: center;
-        border-bottom: 1px solid #DDD;
+        border-bottom: 1px solid #ddd;
     }
     &__list {
         display: flex;
@@ -622,7 +621,7 @@
         width: 35px;
         margin: 0 0 10px 10px;
         border-radius: 10px;
-        &:nth-child(4n+0) {
+        &:nth-child(4n + 0) {
             margin-right: 10px;
         }
         &--active i {
@@ -694,7 +693,7 @@
         padding-right: 10px;
         padding-top: 10px;
         margin-bottom: 8px;
-        border-top: 1px solid #DDD;
+        border-top: 1px solid #ddd;
         .dark-mode {
             position: relative;
             display: flex;
@@ -731,10 +730,10 @@
                 }
             }
             &__close i {
-                color: #FED239;
+                color: #fed239;
             }
             &__open i {
-                color: #9729D3;
+                color: #9729d3;
             }
         }
     }
