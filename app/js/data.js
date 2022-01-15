@@ -48,20 +48,6 @@ const portfolios = [
         ],
     },
     {
-        name: "Bounce423",
-        img: "./app/img/bounce423.png",
-        linkViewPage: "https://simmer.io/@lixxkook/bounce-423-final",
-        linkSourceCode: "https://simmer.io/@lixxkook/bounce-423-final",
-        type: "cloneui",
-        material: [
-            {
-                language: "c#",
-                color: "#621192",
-                percent: "100",
-            },
-        ],
-    },
-    {
         name: "Shopee",
         img: "./app/img/shopee.png",
         linkViewPage: "https://lixxkook00.github.io/shopee/",
@@ -154,6 +140,34 @@ const portfolios = [
                 language: "JS",
                 color: "#486E34",
                 percent: "10",
+            },
+        ],
+    },
+    {
+        name: "Bounce423",
+        img: "./app/img/bounce423.png",
+        linkViewPage: "https://simmer.io/@lixxkook/bounce-423-final",
+        linkSourceCode: "https://simmer.io/@lixxkook/bounce-423-final",
+        type: "project",
+        material: [
+            {
+                language: "c#",
+                color: "#621192",
+                percent: "100",
+            },
+        ],
+    },
+    {
+        name: "Kaiser",
+        img: "./app/img/kaiser.png",
+        linkViewPage: "https://simmer.io/@lixxkook/kaiser-final",
+        linkSourceCode: "https://simmer.io/@lixxkook/kaiser-final",
+        type: "project",
+        material: [
+            {
+                language: "c#",
+                color: "#621192",
+                percent: "100",
             },
         ],
     },
