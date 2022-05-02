@@ -1,5 +1,18 @@
 const portfolios = [
     {
+        name: "E-Commerce",
+        img: "./app/img/uto-react.png",
+        linkViewPage: "https://uto-react.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/uto-react-final",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            },
+        ],
+    },{
         name: "Fresh Mart",
         img: "./app/img/fresh-mart.png",
         linkViewPage: "https://lixxkook00.github.io/fresh-mart/",
@@ -172,6 +185,10 @@ const portfolios = [
         ],
     },
 ];
+
+const skills = [
+    "React", "React Native","Java Script", "HTML","SCSS","CSS","Bootstrap","Responsive Web Design","Node Js"
+]
 const renderPortfolios = (portfolios, element, callback) => {
     const portfolioContent = portfolios
         .map((item) => {
@@ -218,5 +235,37 @@ const renderPortfolios = (portfolios, element, callback) => {
 
     element.innerHTML = portfolioContent;
 };
+
+const renderSkill = (element) => {
+    const skillContent = 
+        skills.map((item) => {
+            
+            return `
+                <div
+                    class="
+                        col-xl-3 col-lg-4 col-md-6 col-sm-12
+                    "
+                >
+                    <div
+                        class="
+                            pskill_item
+                            btn-default
+                            btn-primary-color
+                            d-flex 
+                            justify-content-center
+                            m-t-b-10
+                        "
+                    >
+                        ${item}
+                    </div>
+                </div>
+            `;
+        })
+        .join("");
+    
+    element[0].innerHTML = skillContent;
+};
+
+
 export default portfolios;
-export { renderPortfolios };
+export { renderPortfolios, renderSkill };
