@@ -1,5 +1,36 @@
 const portfolios = [
     {
+        name: "Landing Page Game NTF",
+        img: "./app/img/sqf.jpg",
+        linkViewPage: "https://sweep-dev.vercel.app/",
+        linkSourceCode: "",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "80",
+            },
+            {
+                language: "Web3",
+                color: "#410097",
+                percent: "20",
+            },
+        ],
+    },{
+        name: "Landing Page NTF",
+        img: "./app/img/tiger.jpg",
+        linkViewPage: "https://n1-lading-page.vercel.app/",
+        linkSourceCode: "",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },{
         name: "E-Commerce",
         img: "./app/img/uto-react.png",
         linkViewPage: "https://uto-react.vercel.app/",
@@ -10,6 +41,81 @@ const portfolios = [
                 language: "React",
                 color: "#47BAD4",
                 percent: "100",
+            },
+        ],
+    }, {
+        name: "Marketplace Game NTF",
+        img: "./app/img/n1-m.jpg",
+        linkViewPage: "https://n1-marketplace.vercel.app/",
+        linkSourceCode: "",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "70",
+            },
+            {
+                language: "Web3",
+                color: "#410097",
+                percent: "30",
+            },
+        ],
+    },{
+        name: "Coin Market",
+        img: "./app/img/coin-market.jpg",
+        linkViewPage: "https://coin-market-nine.vercel.app/",
+        linkSourceCode: "",
+        type: "cloneui",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },{
+        name: "Lottery",
+        img: "./app/img/lottery.jpg",
+        linkViewPage: "https://lottery-rho.vercel.app/",
+        linkSourceCode: "",
+        type: "cloneui",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },{
+        name: "Landing Page NTF 2",
+        img: "./app/img/m1.jpg",
+        linkViewPage: "https://world-step.vercel.app/",
+        linkSourceCode: "",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },{
+        name: "View Locked Token",
+        img: "./app/img/view-lock-token.jpg",
+        linkViewPage: "https://a2z-locked-event.vercel.app/",
+        linkSourceCode: "",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "80",
+            },
+            {
+                language: "Web3",
+                color: "#410097",
+                percent: "20",
             },
         ],
     },{
@@ -164,7 +270,7 @@ const portfolios = [
         type: "project",
         material: [
             {
-                language: "c#",
+                language: "C# / Unity",
                 color: "#621192",
                 percent: "100",
             },
@@ -178,7 +284,7 @@ const portfolios = [
         type: "project",
         material: [
             {
-                language: "c#",
+                language: "C# / Unity",
                 color: "#621192",
                 percent: "100",
             },

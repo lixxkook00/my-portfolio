@@ -919,6 +919,9 @@ a + a {
   padding-bottom: 14px;
   border-bottom: 1px solid #d0cfcf;
   overflow: hidden;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
 }
 
 .portfolio__item-img img {
