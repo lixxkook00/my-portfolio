@@ -1,6 +1,6 @@
 const portfolios = [
     {
-        name: "Landing Page Game NTF",
+        name: "Landing Page Game NFT",
         img: "./app/img/sqf.jpg",
         linkViewPage: "https://sweep-dev.vercel.app/",
         linkSourceCode: "",
@@ -18,7 +18,7 @@ const portfolios = [
             },
         ],
     },{
-        name: "Landing Page NTF",
+        name: "Landing Page NFT",
         img: "./app/img/tiger.jpg",
         linkViewPage: "https://n1-lading-page.vercel.app/",
         linkSourceCode: "",
@@ -44,7 +44,7 @@ const portfolios = [
             },
         ],
     }, {
-        name: "Marketplace Game NTF",
+        name: "Marketplace Game NFT",
         img: "./app/img/n1-m.jpg",
         linkViewPage: "https://n1-marketplace.vercel.app/",
         linkSourceCode: "",
@@ -88,7 +88,7 @@ const portfolios = [
             }
         ],
     },{
-        name: "Landing Page NTF 2",
+        name: "Landing Page NFT 2",
         img: "./app/img/m1.jpg",
         linkViewPage: "https://world-step.vercel.app/",
         linkSourceCode: "",
