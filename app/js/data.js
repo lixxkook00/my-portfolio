@@ -1,36 +1,38 @@
 const portfolios = [
+    // {
+    //     name: "Landing Page Game NFT",
+    //     img: "./app/img/sqf.jpg",
+    //     linkViewPage: "https://sweep-dev.vercel.app/",
+    //     linkSourceCode: "",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "React",
+    //             color: "#47BAD4",
+    //             percent: "80",
+    //         },
+    //         {
+    //             language: "Web3",
+    //             color: "#410097",
+    //             percent: "20",
+    //         },
+    //     ],
+    // },
+    // {
+    //     name: "Landing Page NFT",
+    //     img: "./app/img/tiger.jpg",
+    //     linkViewPage: "https://n1-lading-page.vercel.app/",
+    //     linkSourceCode: "",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "React",
+    //             color: "#47BAD4",
+    //             percent: "100",
+    //         }
+    //     ],
+    // },
     {
-        name: "Landing Page Game NFT",
-        img: "./app/img/sqf.jpg",
-        linkViewPage: "https://sweep-dev.vercel.app/",
-        linkSourceCode: "",
-        type: "project",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "80",
-            },
-            {
-                language: "Web3",
-                color: "#410097",
-                percent: "20",
-            },
-        ],
-    },{
-        name: "Landing Page NFT",
-        img: "./app/img/tiger.jpg",
-        linkViewPage: "https://n1-lading-page.vercel.app/",
-        linkSourceCode: "",
-        type: "project",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "100",
-            }
-        ],
-    },{
         name: "E-Commerce",
         img: "./app/img/uto-react.png",
         linkViewPage: "https://uto-react.vercel.app/",
@@ -43,25 +45,27 @@ const portfolios = [
                 percent: "100",
             },
         ],
-    }, {
-        name: "Marketplace Game NFT",
-        img: "./app/img/n1-m.jpg",
-        linkViewPage: "https://n1-marketplace.vercel.app/",
-        linkSourceCode: "",
-        type: "project",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "70",
-            },
-            {
-                language: "Web3",
-                color: "#410097",
-                percent: "30",
-            },
-        ],
-    },{
+    }, 
+    // {
+    //     name: "Marketplace Game NFT",
+    //     img: "./app/img/n1-m.jpg",
+    //     linkViewPage: "https://n1-marketplace.vercel.app/",
+    //     linkSourceCode: "",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "React",
+    //             color: "#47BAD4",
+    //             percent: "70",
+    //         },
+    //         {
+    //             language: "Web3",
+    //             color: "#410097",
+    //             percent: "30",
+    //         },
+    //     ],
+    // },
+    {
         name: "Coin Market",
         img: "./app/img/coin-market.jpg",
         linkViewPage: "https://coin-market-nine.vercel.app/",
@@ -74,7 +78,8 @@ const portfolios = [
                 percent: "100",
             }
         ],
-    },{
+    },
+    {
         name: "Lottery",
         img: "./app/img/lottery.jpg",
         linkViewPage: "https://lottery-rho.vercel.app/",
@@ -87,38 +92,41 @@ const portfolios = [
                 percent: "100",
             }
         ],
-    },{
-        name: "Landing Page NFT 2",
-        img: "./app/img/m1.jpg",
-        linkViewPage: "https://world-step.vercel.app/",
-        linkSourceCode: "",
-        type: "project",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "100",
-            }
-        ],
-    },{
-        name: "View Locked Token",
-        img: "./app/img/view-lock-token.jpg",
-        linkViewPage: "https://a2z-locked-event.vercel.app/",
-        linkSourceCode: "",
-        type: "project",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "80",
-            },
-            {
-                language: "Web3",
-                color: "#410097",
-                percent: "20",
-            },
-        ],
-    },{
+    },
+    // {
+    //     name: "Landing Page NFT 2",
+    //     img: "./app/img/m1.jpg",
+    //     linkViewPage: "https://world-step.vercel.app/",
+    //     linkSourceCode: "",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "React",
+    //             color: "#47BAD4",
+    //             percent: "100",
+    //         }
+    //     ],
+    // },
+    // {
+    //     name: "View Locked Token",
+    //     img: "./app/img/view-lock-token.jpg",
+    //     linkViewPage: "https://a2z-locked-event.vercel.app/",
+    //     linkSourceCode: "",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "React",
+    //             color: "#47BAD4",
+    //             percent: "80",
+    //         },
+    //         {
+    //             language: "Web3",
+    //             color: "#410097",
+    //             percent: "20",
+    //         },
+    //     ],
+    // },
+    {
         name: "Fresh Mart",
         img: "./app/img/fresh-mart.png",
         linkViewPage: "https://lixxkook00.github.io/fresh-mart/",
