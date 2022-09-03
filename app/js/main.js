@@ -334,8 +334,3 @@ btnDarkModeClose.onclick = () => {
 if (currentDarkMode === "true") {
     openDarkMode();
 }
-
-
-
-
-console.log(skillList)

@@ -301,7 +301,15 @@ const portfolios = [
 ];
 
 const skills = [
-    "React", "React Native","Java Script", "HTML","SCSS","CSS","Bootstrap","Responsive Web Design","Node Js"
+    "React JS", 
+    "React Native",
+    "Next Js",
+    "Java Script", 
+    "Node Js",
+    "HTML",
+    "SCSS/CSS",
+    "Bootstrap",
+    "Responsive Web Design",
 ]
 const renderPortfolios = (portfolios, element, callback) => {
     const portfolioContent = portfolios
