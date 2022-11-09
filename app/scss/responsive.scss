@@ -72,6 +72,13 @@
     .hidden-m {
         display: none;
     }
+    .portfolio__filter-item{
+        min-width: 50px;
+        margin: 0 !important;
+        font-size: 12px;
+        margin-left: 5px !important;
+        text-align: center;
+    }
     .header__body {
         margin-top: 10px;
         width: 100%;
@@ -139,7 +146,7 @@
     }
     .portfolio {
         .btn-default {
-            padding: 10px 14px;
+            padding: 10px ;
         }
     }
     .contact {
