@@ -1,37 +1,216 @@
 const portfolios = [
-    // {
-    //     name: "Landing Page Game NFT",
-    //     img: "./app/img/sqf.jpg",
-    //     linkViewPage: "https://sweep-dev.vercel.app/",
-    //     linkSourceCode: "",
-    //     type: "project",
-    //     material: [
-    //         {
-    //             language: "React",
-    //             color: "#47BAD4",
-    //             percent: "80",
-    //         },
-    //         {
-    //             language: "Web3",
-    //             color: "#410097",
-    //             percent: "20",
-    //         },
-    //     ],
-    // },
-    // {
-    //     name: "Landing Page NFT",
-    //     img: "./app/img/tiger.jpg",
-    //     linkViewPage: "https://n1-lading-page.vercel.app/",
-    //     linkSourceCode: "",
-    //     type: "project",
-    //     material: [
-    //         {
-    //             language: "React",
-    //             color: "#47BAD4",
-    //             percent: "100",
-    //         }
-    //     ],
-    // },
+    {
+        name: "Blockchain Project",
+        img: "./app/img/island.png",
+        linkViewPage: "https://island-3d.vercel.app/",
+        linkSourceCode: "https://island-3d.vercel.app/",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },
+    {
+        name: "Blockchain Project",
+        img: "./app/img/mobatech.png",
+        linkViewPage: "https://mobatech-renew.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/mobatech-renew",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },
+    {
+        name: "Blockchain Project",
+        img: "./app/img/mightykick.png",
+        linkViewPage: "https://luckyhero.vercel.app/home",
+        linkSourceCode: "https://github.com/lixxkook00/luckyhero",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },
+    {
+        name: "Blockchain Project",
+        img: "./app/img/luckyhero.png",
+        linkViewPage: "https://luckyhero.vercel.app/home",
+        linkSourceCode: "https://github.com/lixxkook00/luckyhero",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },
+    {
+        name: "Blockchain Game Landing Page",
+        img: "./app/img/sqf.jpg",
+        linkViewPage: "https://sweep-dev.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/sweep",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    }, 
+    {
+        name: "Blockchain Landing Page",
+        img: "./app/img/hetery.png",
+        linkViewPage: "https://hetery.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/hetery",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },  
+    {
+        name: "Blockchain Landing Page",
+        img: "./app/img/binnan.png",
+        linkViewPage: "https://luckyhero.vercel.app/home",
+        linkSourceCode: "https://github.com/lixxkook00/luckyhero",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },  
+    {
+        name: "Blockchain Landing Page",
+        img: "./app/img/n1.png",
+        linkViewPage: "https://cybertigers.io/",
+        linkSourceCode: "https://github.com/lixxkook00/n1-lading-page",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    }, 
+    {
+        name: "Blockchain Landing Page",
+        img: "./app/img/m1.png",
+        linkViewPage: "https://world-step.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/-nft",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    }, 
+    {
+        name: "Business Card",
+        img: "./app/img/namecard.png",
+        linkViewPage: "https://corepower.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/business-cart-react",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    }, 
+    {
+        name: "Financial Landing Page",
+        img: "./app/img/azfintech.png",
+        linkViewPage: "https://azfintech.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/az-fintech",
+        type: "project",
+        material: [
+            {
+                language: "HTML",
+                color: "#FD732A",
+                percent: "60",
+            },
+            {
+                language: "CSS",
+                color: "#F0AA53",
+                percent: "30",
+            },
+            {
+                language: "JS",
+                color: "#486E34",
+                percent: "10",
+            },
+        ],
+    }, 
+    {
+        name: "Business Landing Page",
+        img: "./app/img/trituetunhien.png",
+        linkViewPage: "https://traixinhgaidep.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/trituetunhien",
+        type: "project",
+        material: [
+            {
+                language: "HTML",
+                color: "#FD732A",
+                percent: "60",
+            },
+            {
+                language: "CSS",
+                color: "#F0AA53",
+                percent: "30",
+            },
+            {
+                language: "JS",
+                color: "#486E34",
+                percent: "10",
+            },
+        ],
+    }, 
+    {
+        name: "E-Commerce",
+        img: "./app/img/itg.png",
+        linkViewPage: "https://itgshop.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/quick-store",
+        type: "project",
+        material: [
+            {
+                language: "HTML",
+                color: "#FD732A",
+                percent: "62",
+            },
+            {
+                language: "CSS",
+                color: "#F0AA53",
+                percent: "22",
+            },
+            {
+                language: "JS",
+                color: "#486E34",
+                percent: "16",
+            },
+        ],
+    }, 
     {
         name: "E-Commerce",
         img: "./app/img/uto-react.png",
@@ -46,25 +225,6 @@ const portfolios = [
             },
         ],
     }, 
-    // {
-    //     name: "Marketplace Game NFT",
-    //     img: "./app/img/n1-m.jpg",
-    //     linkViewPage: "https://n1-marketplace.vercel.app/",
-    //     linkSourceCode: "",
-    //     type: "project",
-    //     material: [
-    //         {
-    //             language: "React",
-    //             color: "#47BAD4",
-    //             percent: "70",
-    //         },
-    //         {
-    //             language: "Web3",
-    //             color: "#410097",
-    //             percent: "30",
-    //         },
-    //     ],
-    // },
     {
         name: "Coin Market",
         img: "./app/img/coin-market.jpg",
@@ -93,39 +253,6 @@ const portfolios = [
             }
         ],
     },
-    // {
-    //     name: "Landing Page NFT 2",
-    //     img: "./app/img/m1.jpg",
-    //     linkViewPage: "https://world-step.vercel.app/",
-    //     linkSourceCode: "",
-    //     type: "project",
-    //     material: [
-    //         {
-    //             language: "React",
-    //             color: "#47BAD4",
-    //             percent: "100",
-    //         }
-    //     ],
-    // },
-    // {
-    //     name: "View Locked Token",
-    //     img: "./app/img/view-lock-token.jpg",
-    //     linkViewPage: "https://a2z-locked-event.vercel.app/",
-    //     linkSourceCode: "",
-    //     type: "project",
-    //     material: [
-    //         {
-    //             language: "React",
-    //             color: "#47BAD4",
-    //             percent: "80",
-    //         },
-    //         {
-    //             language: "Web3",
-    //             color: "#410097",
-    //             percent: "20",
-    //         },
-    //     ],
-    // },
     {
         name: "Fresh Mart",
         img: "./app/img/fresh-mart.png",
@@ -301,6 +428,7 @@ const portfolios = [
 ];
 
 const skills = [
+    "Web3", 
     "React JS", 
     "React Native",
     "Next Js",
@@ -309,8 +437,8 @@ const skills = [
     "HTML",
     "SCSS/CSS",
     "Bootstrap",
-    "Responsive Web Design",
 ]
+
 const renderPortfolios = (portfolios, element, callback) => {
     const portfolioContent = portfolios
         .map((item) => {
@@ -361,7 +489,6 @@ const renderPortfolios = (portfolios, element, callback) => {
 const renderSkill = (element) => {
     const skillContent = 
         skills.map((item) => {
-            
             return `
                 <div
                     class="

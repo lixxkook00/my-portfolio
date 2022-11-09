@@ -66,15 +66,6 @@
 
 /* Mobile Only */
 @media (max-width: 739px) {
-
-  .game-demo-content{
-    margin-top: 0;
-  }
-
-  .game-demo-content iframe{
-    height: 200px;
-  }
-
   .hidden-m {
     display: none;
   }

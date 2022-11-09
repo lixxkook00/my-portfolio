@@ -166,7 +166,7 @@ const setTheme = (color) => {
     } else if (color == "pink") {
         colorTheme = "#FD28FC";
     } else if (color == "magenta") {
-        colorTheme = "#FD5F5B";
+        colorTheme = "#EA030A";
     }
     root.style.setProperty("--primaryColor", colorTheme);
 };
@@ -334,3 +334,11 @@ btnDarkModeClose.onclick = () => {
 if (currentDarkMode === "true") {
     openDarkMode();
 }
+
+
+// LOADING ANIMATION
+window.addEventListener('load', (event) => {
+    setTimeout(() => {
+        document.querySelector('#loading').style.display = "none"
+    },2000)
+})
