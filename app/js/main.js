@@ -189,6 +189,7 @@ for (let item of themeItems) {
         checkTheme(item, themeItems);
     };
 }
+
 // soft menu click
 softMenuItems.forEach((item) => {
     item.onclick = () => {

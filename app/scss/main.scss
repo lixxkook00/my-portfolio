@@ -444,7 +444,7 @@
     margin-bottom: 30px;
     &__item {
         display: flex;
-        border: 1px solid #d5d5d5;
+        border: 1px solid var(--primaryColor) !important;
         border-radius: 6px;
         margin-top: 30px;
         padding: 20px;

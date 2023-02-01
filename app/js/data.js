@@ -14,6 +14,20 @@ const portfolios = [
         ],
     },
     {
+        name: "Business Name Card",
+        img: "./app/img/namecard.png",
+        linkViewPage: "https://corepower.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/business-cart-react",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    }, 
+    {
         name: "Blockchain Project",
         img: "./app/img/mobatech.png",
         linkViewPage: "https://mobatech-renew.vercel.app/",
@@ -70,7 +84,7 @@ const portfolios = [
         ],
     }, 
     {
-        name: "Blockchain Landing Page",
+        name: "Crypto Landing Page",
         img: "./app/img/hetery.png",
         linkViewPage: "https://hetery.vercel.app/",
         linkSourceCode: "https://github.com/lixxkook00/hetery",
@@ -84,7 +98,7 @@ const portfolios = [
         ],
     },  
     {
-        name: "Blockchain Landing Page",
+        name: "Crypto Landing Page",
         img: "./app/img/binnan.png",
         linkViewPage: "https://luckyhero.vercel.app/home",
         linkSourceCode: "https://github.com/lixxkook00/luckyhero",
@@ -98,7 +112,7 @@ const portfolios = [
         ],
     },  
     {
-        name: "Blockchain Landing Page",
+        name: "Crypto Landing Page",
         img: "./app/img/n1.png",
         linkViewPage: "https://cybertigers.io/",
         linkSourceCode: "https://github.com/lixxkook00/n1-lading-page",
@@ -112,7 +126,7 @@ const portfolios = [
         ],
     }, 
     {
-        name: "Blockchain Landing Page",
+        name: "Crypto Landing Page",
         img: "./app/img/m1.png",
         linkViewPage: "https://world-step.vercel.app/",
         linkSourceCode: "https://github.com/lixxkook00/-nft",
@@ -125,20 +139,7 @@ const portfolios = [
             }
         ],
     }, 
-    {
-        name: "Business Card",
-        img: "./app/img/namecard.png",
-        linkViewPage: "https://corepower.vercel.app/",
-        linkSourceCode: "https://github.com/lixxkook00/business-cart-react",
-        type: "project",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "100",
-            }
-        ],
-    }, 
+    
     {
         name: "Financial Landing Page",
         img: "./app/img/azfintech.png",
@@ -464,10 +465,10 @@ const renderPortfolios = (portfolios, element, callback) => {
                         <div class="portfolio__item-img" onclick="">
                             <img src="${item.img}" alt="">
                             <div class="portfolio__item-popup">
-                                <a href="${item.linkViewPage}">
+                                <a target="_blank" href="${item.linkViewPage}">
                                     <span><i class="fas fa-eye"></i></span>
                                 </a>
-                                <a href="${item.linkSourceCode}">
+                                <a target="_blank" href="${item.linkSourceCode}">
                                     <span><i class="fas fa-code"></i></span>
                                 </a>
                             </div>
