@@ -1,5 +1,19 @@
 const portfolios = [
     {
+        name: "3D Island with Model-viewer",
+        img: "./app/img/neon-3d.png",
+        linkViewPage: "https://noel-island.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/neon-3d",
+        type: "blockchain",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            }
+        ],
+    },
+    {
         name: "Blockchain Project",
         img: "./app/img/island.png",
         linkViewPage: "https://island-3d.vercel.app/",
@@ -30,7 +44,7 @@ const portfolios = [
     {
         name: "Blockchain Project",
         img: "./app/img/mobatech.png",
-        linkViewPage: "https://mobatech-renew.vercel.app/",
+        linkViewPage: "https://mobatech-renew-nosalary.vercel.app/",
         linkSourceCode: "https://github.com/lixxkook00/mobatech-renew",
         type: "blockchain",
         material: [
@@ -139,7 +153,44 @@ const portfolios = [
             }
         ],
     }, 
-    
+    {
+        name: "E-Commerce",
+        img: "./app/img/uto-react.png",
+        linkViewPage: "https://uto-react.vercel.app/",
+        linkSourceCode: "https://github.com/lixxkook00/uto-react-final",
+        type: "project",
+        material: [
+            {
+                language: "React",
+                color: "#47BAD4",
+                percent: "100",
+            },
+        ],
+    },
+    {
+        name: "Music Player",
+        img: "./app/img/musicplayer.png",
+        linkViewPage: "https://lixxkook00.github.io/music-player/",
+        linkSourceCode: "https://github.com/lixxkook00/music-player",
+        type: "project",
+        material: [
+            {
+                language: "HTML",
+                color: "#FD732A",
+                percent: "27",
+            },
+            {
+                language: "SCSS",
+                color: "#c4568c",
+                percent: "36",
+            },
+            {
+                language: "JS",
+                color: "#486E34",
+                percent: "37",
+            },
+        ],
+    },
     {
         name: "Financial Landing Page",
         img: "./app/img/azfintech.png",
@@ -212,20 +263,7 @@ const portfolios = [
             },
         ],
     }, 
-    {
-        name: "E-Commerce",
-        img: "./app/img/uto-react.png",
-        linkViewPage: "https://uto-react.vercel.app/",
-        linkSourceCode: "https://github.com/lixxkook00/uto-react-final",
-        type: "project",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "100",
-            },
-        ],
-    }, 
+     
     {
         name: "Coin Market",
         img: "./app/img/coin-market.jpg",
@@ -278,30 +316,7 @@ const portfolios = [
             },
         ],
     },
-    {
-        name: "Music Player",
-        img: "./app/img/musicplayer.png",
-        linkViewPage: "https://lixxkook00.github.io/music-player/",
-        linkSourceCode: "https://github.com/lixxkook00/music-player",
-        type: "project",
-        material: [
-            {
-                language: "HTML",
-                color: "#FD732A",
-                percent: "27",
-            },
-            {
-                language: "SCSS",
-                color: "#c4568c",
-                percent: "36",
-            },
-            {
-                language: "JS",
-                color: "#486E34",
-                percent: "37",
-            },
-        ],
-    },
+    
     {
         name: "Shopee",
         img: "./app/img/shopee.png",
