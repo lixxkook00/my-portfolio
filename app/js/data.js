@@ -58,8 +58,8 @@ const portfolios = [
     {
         name: "Blockchain Project",
         img: "./app/img/mightykick.png",
-        linkViewPage: "https://luckyhero.vercel.app/home",
-        linkSourceCode: "https://github.com/lixxkook00/luckyhero",
+        linkViewPage: "https://mightykicks-testing.vercel.app/",
+        linkSourceCode: "",
         type: "blockchain",
         material: [
             {
@@ -191,54 +191,54 @@ const portfolios = [
             },
         ],
     },
-    {
-        name: "Financial Landing Page",
-        img: "./app/img/azfintech.png",
-        linkViewPage: "https://azfintech.vercel.app/",
-        linkSourceCode: "https://github.com/lixxkook00/az-fintech",
-        type: "project",
-        material: [
-            {
-                language: "HTML",
-                color: "#FD732A",
-                percent: "60",
-            },
-            {
-                language: "CSS",
-                color: "#F0AA53",
-                percent: "30",
-            },
-            {
-                language: "JS",
-                color: "#486E34",
-                percent: "10",
-            },
-        ],
-    }, 
-    {
-        name: "Business Landing Page",
-        img: "./app/img/trituetunhien.png",
-        linkViewPage: "https://traixinhgaidep.vercel.app/",
-        linkSourceCode: "https://github.com/lixxkook00/trituetunhien",
-        type: "project",
-        material: [
-            {
-                language: "HTML",
-                color: "#FD732A",
-                percent: "60",
-            },
-            {
-                language: "CSS",
-                color: "#F0AA53",
-                percent: "30",
-            },
-            {
-                language: "JS",
-                color: "#486E34",
-                percent: "10",
-            },
-        ],
-    }, 
+    // {
+    //     name: "Financial Landing Page",
+    //     img: "./app/img/azfintech.png",
+    //     linkViewPage: "https://azfintech.vercel.app/",
+    //     linkSourceCode: "https://github.com/lixxkook00/az-fintech",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "HTML",
+    //             color: "#FD732A",
+    //             percent: "60",
+    //         },
+    //         {
+    //             language: "CSS",
+    //             color: "#F0AA53",
+    //             percent: "30",
+    //         },
+    //         {
+    //             language: "JS",
+    //             color: "#486E34",
+    //             percent: "10",
+    //         },
+    //     ],
+    // }, 
+    // {
+    //     name: "Business Landing Page",
+    //     img: "./app/img/trituetunhien.png",
+    //     linkViewPage: "https://traixinhgaidep.vercel.app/",
+    //     linkSourceCode: "https://github.com/lixxkook00/trituetunhien",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "HTML",
+    //             color: "#FD732A",
+    //             percent: "60",
+    //         },
+    //         {
+    //             language: "CSS",
+    //             color: "#F0AA53",
+    //             percent: "30",
+    //         },
+    //         {
+    //             language: "JS",
+    //             color: "#486E34",
+    //             percent: "10",
+    //         },
+    //     ],
+    // }, 
     {
         name: "E-Commerce",
         img: "./app/img/itg.png",
@@ -278,20 +278,20 @@ const portfolios = [
             }
         ],
     },
-    {
-        name: "Lottery",
-        img: "./app/img/lottery.jpg",
-        linkViewPage: "https://lottery-rho.vercel.app/",
-        linkSourceCode: "",
-        type: "cloneui",
-        material: [
-            {
-                language: "React",
-                color: "#47BAD4",
-                percent: "100",
-            }
-        ],
-    },
+    // {
+    //     name: "Lottery",
+    //     img: "./app/img/lottery.jpg",
+    //     linkViewPage: "https://lottery-rho.vercel.app/",
+    //     linkSourceCode: "",
+    //     type: "cloneui",
+    //     material: [
+    //         {
+    //             language: "React",
+    //             color: "#47BAD4",
+    //             percent: "100",
+    //         }
+    //     ],
+    // },
     {
         name: "Fresh Mart",
         img: "./app/img/fresh-mart.png",
