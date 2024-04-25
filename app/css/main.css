@@ -47,12 +47,14 @@ a + a {
 }
 
 .btn-default.secondary {
-  border: 1px solid #47BAD4;
+  border: 1px solid var(--primaryColor) !important;
+  color: var(--primaryColor) !important;
   background-color: transparent;
 }
 
 .btn-default.secondary:hover {
-  background-color: #47BAD4;
+  cursor: pointer;
+  transform: scale(0.98);
 }
 
 .btn-default + .btn-default {
@@ -1285,16 +1287,15 @@ a + a {
   left: 0;
   width: 202px;
   background-color: var(--darkModeBackground) !important;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   color: #757474;
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: rgb(151 151 151 / 65%) 2px 2px 16px -2px, rgb(156 156 156 / 0%) 0px 1px 1px -1px;
+  box-shadow: rgb(151 151 151 / 65%) 2px 2px 16px -2px, rgb(156 156 156 / 0%) 0px 1px 1px -1px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   -webkit-transform: translateX(-203px);
           transform: translateX(-203px);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .theme__header {
