@@ -306,7 +306,7 @@ btnLogo.onclick = () => {
 };
 
 // Dark Mode
-let stateDarkMode = false;
+let stateDarkMode = true;
 const openDarkMode = () => {
     btnDarkMode.classList.remove("down");
     btnDarkMode.classList.add("up");
@@ -340,6 +340,10 @@ if (currentDarkMode === "true") {
 // LOADING ANIMATION
 window.addEventListener('load', (event) => {
     setTimeout(() => {
-        document.querySelector('#loading').style.display = "none"
+        document.querySelector('#loading').style.display = "none";
+        if(!window.localStorage.getItem("darkMode")){
+            openDarkMode();
+            window.localStorage.setItem("darkMode", true);
+        }
     },2000)
 })

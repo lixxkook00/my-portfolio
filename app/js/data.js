@@ -513,7 +513,7 @@ const renderPortfolios = (portfolios, element, callback) => {
                 })
                 .join("");
             return `
-                <div class=" col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class=" col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="portfolio__item">
                         <div class="portfolio__item-name">
                             ${item.name}

@@ -185,7 +185,6 @@ a + a {
 .section-title {
   text-align: center;
   padding-bottom: 8px;
-  margin-bottom: 24px;
 }
 
 .section-title__text {
@@ -812,6 +811,10 @@ a + a {
 .skill__item {
   position: relative;
   margin-bottom: 20px;
+}
+
+.skill-list div{
+  color: #757474 ;
 }
 
 .skill__item-name {
