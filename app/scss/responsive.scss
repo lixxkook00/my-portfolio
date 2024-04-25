@@ -4,6 +4,9 @@
     .hidden-t {
         display: none;
     }
+    .grid-m-1{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
     .nav {
         &__list {
             display: none !important;

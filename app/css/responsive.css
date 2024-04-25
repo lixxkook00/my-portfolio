@@ -69,6 +69,9 @@
   .hidden-m {
     display: none;
   }
+  .grid-m-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .portfolio__filter-item {
     min-width: 50px;
     margin: 0 !important;

@@ -46,6 +46,15 @@ a + a {
   position: relative;
 }
 
+.btn-default.secondary {
+  border: 1px solid #47BAD4;
+  background-color: transparent;
+}
+
+.btn-default.secondary:hover {
+  background-color: #47BAD4;
+}
+
 .btn-default + .btn-default {
   margin-left: 16px;
 }
@@ -1190,7 +1199,8 @@ a + a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--darkModeBackground) !important;
+  color: #757474;
   width: 280px;
   height: 100vh;
   -webkit-transform: translateX(-100%);
@@ -1214,7 +1224,7 @@ a + a {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 18px;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #dddddd6e;
 }
 
 .soft-menu__item a {
@@ -1271,8 +1281,9 @@ a + a {
   top: 200px;
   left: 0;
   width: 202px;
-  background-color: #fff;
+  background-color: var(--darkModeBackground) !important;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  color: #757474;
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1280,6 +1291,7 @@ a + a {
           transform: translateX(-203px);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .theme__header {
@@ -1288,7 +1300,8 @@ a + a {
   font-family: "Poppins", sans-serif;
   padding: 15px 0;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd50;
+  color: var(--primaryColor) !important;
 }
 
 .theme__list {
@@ -1413,7 +1426,7 @@ a + a {
   padding-right: 10px;
   padding-top: 10px;
   margin-bottom: 8px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd50;
 }
 
 .theme__darkmode .dark-mode {
@@ -1609,5 +1622,34 @@ a + a {
     transform: rotate(-180deg);
     opacity: 0;
   }
+}
+
+.grid{
+  display: grid;
+  gap: 10px;
+}
+
+.grid-1{
+grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-2{
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-1-2{
+grid-template-columns : 33% 66%;
+}
+
+.grid-3-2{
+  grid-template-columns : 60% 39%;
 }
 /*# sourceMappingURL=main.css.map */

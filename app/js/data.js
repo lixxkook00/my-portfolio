@@ -9,7 +9,41 @@ const portfolios = [
             {
                 language: "React",
                 color: "#47BAD4",
-                percent: "100",
+                percent: "65",
+            },
+            {
+                language: "ModelViewer",
+                color: "#3E63BD",
+                percent: "35",
+            }
+        ],
+    },
+    {
+        name: "Blockchain Tuition Project",
+        img: "./app/img/crypto-tuition.png",
+        linkViewPage: "/app/videos/crypto-tuition-demo.mp4",
+        linkSourceCode: "",
+        type: "blockchain",
+        material: [
+            {
+                language: "ReactTS",
+                color: "#47BAD4",
+                percent: "25",
+            },
+            {
+                language: "NodeJs",
+                color: "#6FBF4D",
+                percent: "25",
+            },
+            {
+                language: "Solidity",
+                color: "#7682C7",
+                percent: "25",
+            },
+            {
+                language: "MySQL",
+                color: "#DD8200",
+                percent: "25",
             }
         ],
     },
@@ -23,10 +57,16 @@ const portfolios = [
             {
                 language: "React",
                 color: "#47BAD4",
-                percent: "100",
+                percent: "65",
+            },
+            {
+                language: "ModelViewer",
+                color: "#3E63BD",
+                percent: "35",
             }
         ],
     },
+
     {
         name: "Business Name Card",
         img: "./app/img/namecard.png",
@@ -42,7 +82,7 @@ const portfolios = [
         ],
     }, 
     {
-        name: "Blockchain Project",
+        name: "Crypto Landing Page",
         img: "./app/img/mobatech.png",
         linkViewPage: "https://mobatech-renew-nosalary.vercel.app/",
         linkSourceCode: "https://github.com/lixxkook00/mobatech-renew",
@@ -56,7 +96,7 @@ const portfolios = [
         ],
     },
     {
-        name: "Blockchain Project",
+        name: "Crypto Landing Page",
         img: "./app/img/mightykick.png",
         linkViewPage: "https://mightykicks-testing.vercel.app/",
         linkSourceCode: "",
@@ -70,7 +110,35 @@ const portfolios = [
         ],
     },
     {
-        name: "Blockchain Project",
+        name: "Bounce423",
+        img: "./app/img/bounce423.png",
+        linkViewPage: "https://simmer.io/@lixxkook/bounce-423-final",
+        linkSourceCode: "https://simmer.io/@lixxkook/bounce-423-final",
+        type: "project",
+        material: [
+            {
+                language: "C# / Unity",
+                color: "#621192",
+                percent: "100",
+            },
+        ],
+    },
+    {
+        name: "Kaiser",
+        img: "./app/img/kaiser.png",
+        linkViewPage: "https://simmer.io/@lixxkook/kaiser-final",
+        linkSourceCode: "https://simmer.io/@lixxkook/kaiser-final",
+        type: "project",
+        material: [
+            {
+                language: "C# / Unity",
+                color: "#621192",
+                percent: "100",
+            },
+        ],
+    },
+    {
+        name: "Crypto Landing Page",
         img: "./app/img/luckyhero.png",
         linkViewPage: "https://luckyhero.vercel.app/home",
         linkSourceCode: "https://github.com/lixxkook00/luckyhero",
@@ -365,94 +433,67 @@ const portfolios = [
             },
         ],
     },
-    {
-        name: "Google Search",
-        img: "./app/img/google-search.png",
-        linkViewPage: "https://lixxkook00.github.io/clone-ui-google-search/",
-        linkSourceCode: "https://github.com/lixxkook00/clone-ui-google-search",
-        type: "cloneui",
-        material: [
-            {
-                language: "HTML",
-                color: "#FD732A",
-                percent: "57",
-            },
-            {
-                language: "CSS",
-                color: "#F0AA53",
-                percent: "43",
-            },
-            {
-                language: "JS",
-                color: "#486E34",
-                percent: "0",
-            },
-        ],
-    },
-    {
-        name: "Kookies Store",
-        img: "./app/img/kookies-store.png",
-        linkViewPage: "https://lixxkook00.github.io/kookies-store/",
-        linkSourceCode: "https://github.com/lixxkook00/kookies-store",
-        type: "project",
-        material: [
-            {
-                language: "HTML",
-                color: "#FD732A",
-                percent: "43",
-            },
-            {
-                language: "CSS",
-                color: "#F0AA53",
-                percent: "47",
-            },
-            {
-                language: "JS",
-                color: "#486E34",
-                percent: "10",
-            },
-        ],
-    },
-    {
-        name: "Bounce423",
-        img: "./app/img/bounce423.png",
-        linkViewPage: "https://simmer.io/@lixxkook/bounce-423-final",
-        linkSourceCode: "https://simmer.io/@lixxkook/bounce-423-final",
-        type: "project",
-        material: [
-            {
-                language: "C# / Unity",
-                color: "#621192",
-                percent: "100",
-            },
-        ],
-    },
-    {
-        name: "Kaiser",
-        img: "./app/img/kaiser.png",
-        linkViewPage: "https://simmer.io/@lixxkook/kaiser-final",
-        linkSourceCode: "https://simmer.io/@lixxkook/kaiser-final",
-        type: "project",
-        material: [
-            {
-                language: "C# / Unity",
-                color: "#621192",
-                percent: "100",
-            },
-        ],
-    },
+    // {
+    //     name: "Google Search",
+    //     img: "./app/img/google-search.png",
+    //     linkViewPage: "https://lixxkook00.github.io/clone-ui-google-search/",
+    //     linkSourceCode: "https://github.com/lixxkook00/clone-ui-google-search",
+    //     type: "cloneui",
+    //     material: [
+    //         {
+    //             language: "HTML",
+    //             color: "#FD732A",
+    //             percent: "57",
+    //         },
+    //         {
+    //             language: "CSS",
+    //             color: "#F0AA53",
+    //             percent: "43",
+    //         },
+    //         {
+    //             language: "JS",
+    //             color: "#486E34",
+    //             percent: "0",
+    //         },
+    //     ],
+    // },
+    // {
+    //     name: "Kookies Store",
+    //     img: "./app/img/kookies-store.png",
+    //     linkViewPage: "https://lixxkook00.github.io/kookies-store/",
+    //     linkSourceCode: "https://github.com/lixxkook00/kookies-store",
+    //     type: "project",
+    //     material: [
+    //         {
+    //             language: "HTML",
+    //             color: "#FD732A",
+    //             percent: "43",
+    //         },
+    //         {
+    //             language: "CSS",
+    //             color: "#F0AA53",
+    //             percent: "47",
+    //         },
+    //         {
+    //             language: "JS",
+    //             color: "#486E34",
+    //             percent: "10",
+    //         },
+    //     ],
+    // },
 ];
 
 const skills = [
-    "Web3", 
-    "React JS", 
-    "React Native",
-    "Next Js",
-    "Java Script", 
+    "React", 
+    "Vue",
+    "JavaScript", 
+    "TypeScript", 
+    "Solidity",
+    "Phaser",
     "Node Js",
-    "HTML",
+    "HTML5",
+    "Taildwind",
     "SCSS/CSS",
-    "Bootstrap",
 ]
 
 const renderPortfolios = (portfolios, element, callback) => {
@@ -507,18 +548,17 @@ const renderSkill = (element) => {
         skills.map((item) => {
             return `
                 <div
-                    class="
-                        col-xl-3 col-lg-4 col-md-6 col-sm-12
-                    "
+                    class=""
                 >
                     <div
                         class="
                             pskill_item
                             btn-default
-                            btn-primary-color
+                            secondary
                             d-flex 
                             justify-content-center
                             m-t-b-10
+                            mr-2
                         "
                     >
                         ${item}
